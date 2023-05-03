@@ -1,0 +1,19 @@
+{
+  "name": "@gpa-design-system-poc/tokens",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup ./index.ts --format esm,cjs --dts",
+    "dev": "tsup ./index.ts --format esm,cjs --dts --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^6.2.3",
+    "typescript": "^4.8.4"
+  }
+}
