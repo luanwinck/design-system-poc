@@ -1,9 +1,5 @@
 {
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
@@ -14,5 +10,9 @@
     "prettier": "^2.7.1",
     "turbo": "latest"
   },
-  "packageManager": "yarn@1.22.19"
+  "packageManager": "npm@8.19.3",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
 }
