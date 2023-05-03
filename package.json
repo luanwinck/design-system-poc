@@ -14,5 +14,8 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "react-native-extended-stylesheet": "0.12.0"
+  }
 }
