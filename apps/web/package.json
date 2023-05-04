@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev2": "next dev",
+    "dev": "storybook dev -p 6006",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -13,8 +14,8 @@
   "dependencies": {
     "@storybook/addon-react-native-web": "^0.0.20",
     "next": "~12",
-    "react": "17.0.2",
-    "react-dom": "~17",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "react-native-web": "^0.18.4",
     "ui": "*"
   },
