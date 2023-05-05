@@ -1,4 +1,4 @@
-import { Button, DSButton } from "ui";
+import { Button, DSButton } from "@design-system-poc/react-native-components";
 import { View } from 'react-native-web'
 import styles from "../styles/index.module.css";
 

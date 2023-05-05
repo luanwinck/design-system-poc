@@ -1,4 +1,4 @@
-# Turborepo react-native starter
+# POC Design System
 
 This is an official starter Turborepo.
 

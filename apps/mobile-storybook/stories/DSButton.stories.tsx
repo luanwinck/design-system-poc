@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { DSButton, DSButtonProps } from 'ui';
+import { DSButton, DSButtonProps } from '@design-system-poc/react-native-components';
 
 export default {
   title: 'Example/DSButton',
