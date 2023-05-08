@@ -1,9 +1,9 @@
 import React from 'react'
 import { TouchableOpacity, View, ActivityIndicator, Text } from 'react-native'
 
-import getStyles from './ds-button.style'
+import getStyles from './button.style'
 
-export type DSButtonProps = {
+export type ButtonProps = {
   title: string,
   size?: 'small' | 'medium' | 'large',
   variant?: 'contained' | 'outlined',
@@ -20,17 +20,15 @@ const defaultProps = {
   disabled: false,
 }
 
-export function DSButton({
+export function Button({
   title,
   size = 'small',
   variant = 'contained',
   color = 'primary',
   loading,
   disabled = false,
-}: DSButtonProps) {
+}: ButtonProps) {
   const styles = getStyles(color, size, disabled)
-
-  console.log(styles)
 
   const touchableStyle = [
     styles.button,
@@ -53,7 +51,7 @@ export function DSButton({
   )
 }
 
-DSButton.defaultProps = defaultProps
+Button.defaultProps = defaultProps
 
 // TODO
 // - Aplicar tamanho de fonte

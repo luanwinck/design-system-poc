@@ -1,31 +1,10 @@
-// import React from "react";
-// import { ComponentStory, ComponentMeta } from "@storybook/react-native";
-// import { MyButton } from "./Button";
-
-// const MyButtonMeta: ComponentMeta<typeof MyButton> = {
-//   title: "MyButton",
-//   component: MyButton,
-//   argTypes: {
-//     onPress: { action: "pressed the button" },
-//   },
-//   args: {
-//     text: "Hello world",
-//   },
-// };
-
-// export default MyButtonMeta;
-
-// type MyButtonStory = ComponentStory<typeof MyButton>;
-
-// export const Basic: MyButtonStory = (args) => <MyButton {...args} />;
-
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { DSButton, DSButtonProps } from '@design-system-poc/react-native-components';
+import { Button, ButtonProps } from './button';
 
 export default {
-  title: 'MyButton',
-  component: DSButton,
+  title: 'Example/Button',
+  component: Button,
   tags: ['autodocs'],
   parameters: {
     title: 'teste'
@@ -45,11 +24,11 @@ export default {
     },
   },
 
-} as Meta<DSButtonProps>;
+} as Meta<ButtonProps>;
 
-type Story = StoryObj<DSButtonProps>;
+type Story = StoryObj<ButtonProps>;
 
-export const Basic: Story = {
+export const PrimarySmall: Story = {
   args: {
     title: "Primary small",
     size: "small",

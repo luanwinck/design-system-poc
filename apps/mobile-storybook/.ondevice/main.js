@@ -1,5 +1,5 @@
 module.exports = {
-  stories: ["../components/**/*.stories.?(ts|tsx|js|jsx)", "../stories/**/*.stories.?(ts|tsx|js|jsx)"],
+  stories: ["../../../packages/react-native-components/src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
     "@storybook/addon-ondevice-controls",
     "@storybook/addon-ondevice-actions",

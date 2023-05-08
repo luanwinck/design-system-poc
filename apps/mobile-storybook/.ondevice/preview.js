@@ -1,4 +1,5 @@
 import { withBackgrounds } from "@storybook/addon-ondevice-backgrounds";
+import '../configure'
 
 export const decorators = [withBackgrounds];
 

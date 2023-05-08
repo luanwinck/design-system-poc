@@ -11,17 +11,10 @@ import {
 global.STORIES = [
   {
     titlePrefix: "",
-    directory: "./components",
-    files: "**/*.stories.?(ts|tsx|js|jsx)",
+    directory: "../../packages/react-native-components/src",
+    files: "**/*.stories.@(js|jsx|ts|tsx)",
     importPathMatcher:
-      "^\\.[\\\\/](?:components(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.stories\\.(?:ts|tsx|js|jsx)?)$",
-  },
-  {
-    titlePrefix: "",
-    directory: "./stories",
-    files: "**/*.stories.?(ts|tsx|js|jsx)",
-    importPathMatcher:
-      "^\\.[\\\\/](?:stories(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.stories\\.(?:ts|tsx|js|jsx)?)$",
+      "^(?:\\.\\.\\/\\.\\.\\/packages\\/react-native-components\\/src(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.stories\\.(js|jsx|ts|tsx))$",
   },
 ];
 
@@ -56,8 +49,7 @@ try {
 
 const getStories = () => {
   return {
-    "./components/Button/Button.stories.tsx": require("../components/Button/Button.stories.tsx"),
-    "./stories/DSButton.stories.tsx": require("../stories/DSButton.stories.tsx"),
+    "./../../packages/react-native-components/src/button/Button.stories.ts": require("../../../packages/react-native-components/src/button/Button.stories.ts"),
   };
 };
 
