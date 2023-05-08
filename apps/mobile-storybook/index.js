@@ -1,10 +1,8 @@
 import { registerRootComponent } from "expo";
 
-export {default} from './.ondevice'
-
-import App from "./App";
+import { default as Storybook } from './.ondevice'
 
 // registerRootComponent calls AppRegistry.registerComponent('main', () => App);
 // It also ensures that whether you load the app in Expo Go or in a native build,
 // the environment is set up appropriately
-registerRootComponent(App);
+registerRootComponent(Storybook);

@@ -76,7 +76,6 @@ export default (color: string, size: string, disabled: boolean) => {
 
     // Text conditions
     loadingText: {
-      // backgroundColor: 'blue',
       color: 'transparent',
       marginBottom: -(buttonSize.height / 2),
     },
